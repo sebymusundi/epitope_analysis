@@ -1,1 +1,2 @@
 This script extracts b-cell epitopes from the output of a CSV file from Bepipred 2.0
+The extractor only focuses on analyzing epitopes produced by the first 50 fasta sequences
