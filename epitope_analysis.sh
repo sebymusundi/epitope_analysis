@@ -33,16 +33,33 @@ done
 cat raw_data/PlasmoDB-60_PvivaxP01_AnnotatedProteins.fasta raw_data/PlasmoDB-60_PovalecurtisiGH01_AnnotatedProteins.fasta\
 raw_data/PlasmoDB-60_PmalariaeUG01_AnnotatedProteins.fasta   raw_data/PlasmoDB-60_PknowlesiH_AnnotatedProteins.fasta > raw_data/non_falciparum.fasta
 
+# From the predicted R script results for epitope prediction convert the tsv output to fasta format
+awk -F '\t' '{print ">"$1 "\n" $2}' combined_epitopes.tsv  | tail +3 > combined_epitopes.fasta
 
+# Count the number of fasta sequences present
+grep ">" combined_epitopes.fasta |wc -l
 
-# Blast against non_falciparum species
+# Cluster epitopes using cd-hit with a similarity of 90%
+cd-hit -i combined_epitopes.fasta -o combined_epitopes_cluster -c 0.9
 
-blastp -query ../predicted_epitopes/plasmodium_epitopes.fasta -db ../databases/non_falciparum_database -out non_falciparum_vs_epitopes.tsv   -evalue 0.00001 \
+# Check the number of clusters present
+less combined_epitopes_cluster | grep ">" | wc -l
+
+# Rename the clustered file to add a fasta extension
+mv  combined_epitopes_cluster  combined_epitopes_cluster.fasta
+
+# make non_falciparum database using the non-redudant database made during the initial stages
+makeblastdb -dbtype prot -in non_falciparum_database.fasta  -parse_seqids -out  databases/non_falciparum_database
+makeblastdb -dbtype prot -in human_database.fasta  -parse_seqids -out  databases/human_database
+
+# Blast the epitope clusters against non_falciparum species
+
+blastp -query ../predicted_epitopes/combined_epitopes_cluster.fasta -db ../databases/non_falciparum_database -out non_falciparum_vs_epitopes.tsv   -evalue 0.00001 \
 -outfmt '6 qseqid  sseqid qlen slen qend send sstart send length pident nident evalue qcovs' -max_target_seqs 8
 
 # Blast agaist human database
 
-blastp -query ../predicted_epitopes/plasmodium_epitopes.fasta -db ../databases/human_database -out human_vs_epitopes.tsv   -evalue 0.00001 \
+blastp -query ../predicted_epitopes/combined_epitopes_cluster.fasta -db ../databases/human_database -out human_vs_epitopes.tsv   -evalue 0.00001 \
 -outfmt '6 qseqid  sseqid qlen slen qend send sstart send length pident nident evalue qcovs' -max_target_seqs 8
 
 # Extract Plasmodium epitopes which were homologous to humans from the  blast analysis
@@ -140,13 +157,21 @@ less non_toxic_ids.tsv | cut -c1-13 | sort | uniq -cd | awk '{print $2}' >> plas
 less SP_TM_epitopes.tsv |wc -l
 
 # Epitopes selected for conservation analysis
+awk 'NR==FNR {A[$0]=1; next} !A[$0]' SP_TM_epitopes.tsv non_toxic_ids.tsv > final_predicted_epitopes.tsv
+
 
 # Download chromosomes 1, 2, 4, 8, 9,11,12,13,14,
 
 
 
 
+# Extracting a specific position for proteins present in chromosome 1
+bcftools view -r Pf3D7_01_v3:172470-175055 Pf_60_public_Pf3D7_01_v3.final.vcf.gz -Oz -o PF3D7_0103900.vcf.gz
 
+# normalize indels
+bcftools norm -f Pfalciparum.genome.fasta -m-both PF3D7_0103900.vcf.gz -Oz -o  PF3D7_0103900_normalized.vcf.gz
+
+# Extract fasta sequences
 
 
 
