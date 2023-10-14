@@ -123,10 +123,10 @@ seqtk subseq  ../predicted_epitopes/combined_epitopes_cluster.fasta downselected
 # against parasites with the default settings. Select for epitopes that were antigenic
 
 ## count the number of antigenic  peptides (80)
-less vaxijen_results.tsv | grep " Probable ANTIGEN" |wc -l
+less vaxijen_results.txt | grep " Probable ANTIGEN" |wc -l
 
 ## Extract Ids of antigenic epitopes to check for their allergenicity usin ALLERTOP
-less vaxijen_results.tsv | grep " Probable ANTIGEN" | awk '{print $1}' | cut -c2-60 | sort > antigenic_epitopes.tsv
+less vaxijen_results.txt | grep "Probable ANTIGEN" | awk '{print $1}' | cut -c2-60 | sort > antigenic_epitopes.tsv
 
 ## Use seqtk to extract fasta files for antigenic epitopes
 
@@ -135,18 +135,18 @@ seqtk subseq  ../predicted_epitopes/combined_epitopes_cluster.fasta antigenic_ep
 #  Remove  allergenic epitopes predicted by allertop
 ## Check number of allergenic but antigenic epitopes (36)
 
-less less allergens__ids.tsv | wc -l
+less less allergens_predicted.tsv  | wc -l
 
 ##   Remove allergenic epitopes
-awk 'NR==FNR {A[$0]=1; next} !A[$0]' allergens__ids.tsv antigenic_epitopes.tsv > non_allergenic_antigenic.tsv
+awk 'NR==FNR {A[$0]=1; next} !A[$0]' allergens_predicted.tsv  antigenic_epitopes.tsv > non_allergenic_antigenic.tsv
 
 ## Extract the fasta files for the remaining epitopes (non-allergnic and antigenic )
-seqtk subseq ../predicted_epitopes/plasmodium_epitopes.fasta non_allergenic_antigenic.tsv > non_allergenic_antigenic.fasta
+seqtk subseq ../predicted_epitopes/combined_epitopes_cluster.fasta non_allergenic_antigenic.tsv > non_allergenic_antigenic.fasta
 
 # Run toxinpred analysis  to identify peptides which potentially are toxins.
 ## Check the number of non- toxic peptides from the remaining number (28)
 
-less toxin_analysis_prediction.tsv | grep "Non-Toxin" | cut -f 1 > non_toxic_ids.tsv
+less toxinpred_results.txt | grep "Non-Toxin" | cut -f 1 > non_toxic_ids.tsv
 
 # Extract the pfalciparum ids to check them in the web tool protter.  The check ensures the peptides position is not within the signal peptide position or \
 # within the transmembrane domain
@@ -160,7 +160,27 @@ less SP_TM_epitopes.tsv |wc -l
 awk 'NR==FNR {A[$0]=1; next} !A[$0]' SP_TM_epitopes.tsv non_toxic_ids.tsv > final_predicted_epitopes.tsv
 
 
-# Download chromosomes 1, 2, 4, 8, 9,11,12,13,14,
+# Download chromosomes associated with specific epitopes
+
+
+# Create folders used to download data for analysis
+
+mkdir -p  chromosome_1 chromosome_2 chromosome_3 chromosome_6 chromosome_7 chromosome_8 chromosome_9 chromosome_10 chromosome_11 chromosome_12 chromosome_13 chromosome_14
+
+wget -P chromosome_1   ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_01_v3.final.vcf.gz
+wget -P chromosome_2    ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_02_v3.final.vcf.gz
+wget -P chromosome_3/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_03_v3.final.vcf.gz
+#wget -P chromosome_4/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_04_v3.final.vcf.gz
+#wget -P chromosome_5/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_05_v3.final.vcf.gz
+wget -P chromosome_6/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_06_v3.final.vcf.gz
+wget -P chromosome_7/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_07_v3.final.vcf.gz
+wget -P chromosome_8/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_08_v3.final.vcf.gz
+wget -P chromosome_9/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_09_v3.final.vcf.gz
+wget -P chromosome_10/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_10_v3.final.vcf.gz
+wget -P chromosome_11/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_11_v3.final.vcf.gz
+wget -P chromosome_12/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_12_v3.final.vcf.gz
+wget -P chromosome_13/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_13_v3.final.vcf.gz
+wget -P chromosome_14/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_14_v3.final.vcf.gz
 
 
 
