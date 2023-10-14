@@ -1,5 +1,9 @@
 ## Epitope analysis 
-This script provides information on how to analyze predicted b-cell linear epitopes from Plasmodium species. 
+This script provides information on how to analyze predicted b-cell linear epitopes from Plasmodium species.
+
+This repository has been primarily analyzed using bash and Rstudio. Most of the bash tools have been run on the conda environment. 
+
+Rstudio and more specifically, the ```tidyverse``` package had been primarily used to filter information from important web-browser tools.
 
 
 
