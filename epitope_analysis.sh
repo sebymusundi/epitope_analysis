@@ -3,54 +3,54 @@
 
 # Download falciparum and non_falciparum plasmodium species from PlasmoDB website
 
-mkdir raw_data
+#mkdir raw_data
 
 # Download Plasmodium species fasta sequences into the raw_data folder
 
-wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/Pfalciparum3D7/fasta/data/PlasmoDB-60_Pfalciparum3D7_AnnotatedProteins.fasta
-wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/PvivaxP01/fasta/data/PlasmoDB-60_PvivaxP01_AnnotatedProteins.fasta
-wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/PovalecurtisiGH01/fasta/data/PlasmoDB-60_PovalecurtisiGH01_AnnotatedProteins.fasta
-wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/PmalariaeUG01/fasta/data/PlasmoDB-60_PmalariaeUG01_AnnotatedProteins.fasta
-wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/PknowlesiH/fasta/data/PlasmoDB-60_PknowlesiH_AnnotatedProteins.fasta
+#wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/Pfalciparum3D7/fasta/data/PlasmoDB-60_Pfalciparum3D7_AnnotatedProteins.fasta
+#wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/PvivaxP01/fasta/data/PlasmoDB-60_PvivaxP01_AnnotatedProteins.fasta
+#wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/PovalecurtisiGH01/fasta/data/PlasmoDB-60_PovalecurtisiGH01_AnnotatedProteins.fasta
+#wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/PmalariaeUG01/fasta/data/PlasmoDB-60_PmalariaeUG01_AnnotatedProteins.fasta
+#wget -P raw_data/  https://plasmodb.org/common/downloads/Current_Release/PknowlesiH/fasta/data/PlasmoDB-60_PknowlesiH_AnnotatedProteins.fasta
 
 
 # Download Human proteome sequence from NCBI
-wget -P raw_data/   https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_protein.faa.gz
+#wget -P raw_data/   https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_protein.faa.gz
 
 # unzip the file
-gunzip  raw_data/GCF*
+#gunzip  raw_data/GCF*
 
 # Check the number of proteins present in individual Plasmodium species
 
-for i in raw_data/PlasmoDB-60*
-do
-    echo " The number of proteins in  "
-    grep ">" ${i} |wc -l
-done
+#for i in raw_data/PlasmoDB-60*
+#do
+#   echo " The number of proteins in  "
+#   grep ">" ${i} |wc -l
+#done
 
 # Make a file containing P.vivax, P. ovale, P. knowlesi and P. malariae for non-falciparum malaria
 
-cat raw_data/PlasmoDB-60_PvivaxP01_AnnotatedProteins.fasta raw_data/PlasmoDB-60_PovalecurtisiGH01_AnnotatedProteins.fasta\
-raw_data/PlasmoDB-60_PmalariaeUG01_AnnotatedProteins.fasta   raw_data/PlasmoDB-60_PknowlesiH_AnnotatedProteins.fasta > raw_data/non_falciparum.fasta
+#cat raw_data/PlasmoDB-60_PvivaxP01_AnnotatedProteins.fasta raw_data/PlasmoDB-60_PovalecurtisiGH01_AnnotatedProteins.fasta\
+#raw_data/PlasmoDB-60_PmalariaeUG01_AnnotatedProteins.fasta   raw_data/PlasmoDB-60_PknowlesiH_AnnotatedProteins.fasta > raw_data/non_falciparum.fasta
 
 # From the predicted R script results for epitope prediction convert the tsv output to fasta format
-awk -F '\t' '{print ">"$1 "\n" $2}' combined_epitopes.tsv  | tail +3 > combined_epitopes.fasta
+#awk -F '\t' '{print ">"$1 "\n" $2}' combined_epitopes.tsv  | tail +3 > combined_epitopes.fasta
 
 # Count the number of fasta sequences present
-grep ">" combined_epitopes.fasta |wc -l
+#grep ">" combined_epitopes.fasta |wc -l
 
 # Cluster epitopes using cd-hit with a similarity of 90%
-cd-hit -i combined_epitopes.fasta -o combined_epitopes_cluster -c 0.9
+#cd-hit -i combined_epitopes.fasta -o combined_epitopes_cluster -c 0.9
 
 # Check the number of clusters present
-less combined_epitopes_cluster | grep ">" | wc -l
+#less combined_epitopes_cluster | grep ">" | wc -l
 
 # Rename the clustered file to add a fasta extension
-mv  combined_epitopes_cluster  combined_epitopes_cluster.fasta
+#mv  combined_epitopes_cluster  combined_epitopes_cluster.fasta
 
 # make non_falciparum database using the non-redudant database made during the initial stages
-makeblastdb -dbtype prot -in non_falciparum_database.fasta  -parse_seqids -out  databases/non_falciparum_database
-makeblastdb -dbtype prot -in human_database.fasta  -parse_seqids -out  databases/human_database
+#makeblastdb -dbtype prot -in non_falciparum_database.fasta  -parse_seqids -out  databases/non_falciparum_database
+#makeblastdb -dbtype prot -in human_database.fasta  -parse_seqids -out  databases/human_database
 
 # Blast the epitope clusters against non_falciparum species
 
@@ -117,7 +117,7 @@ less blast_selection.tsv |awk '$9>=70 {print $0}' | awk '$12>=95 {print $0}' | c
 # antigenic, toxicity and allergen analysis
 
 
-seqtk subseq  ../predicted_epitopes/plasmodium_epitopes.fasta downselected_cross_species_id.tsv > downselected_cross_species_id.fasta
+seqtk subseq  ../predicted_epitopes/combined_epitopes_cluster.fasta downselected_cross_species_id.tsv > downselected_cross_species_id.fasta
 
 # Run VAXIJEN analysis from the web and get the results. File saved as vaxijen_results.tsv . Vaxijen run \
 # against parasites with the default settings. Select for epitopes that were antigenic
@@ -130,7 +130,7 @@ less vaxijen_results.tsv | grep " Probable ANTIGEN" | awk '{print $1}' | cut -c2
 
 ## Use seqtk to extract fasta files for antigenic epitopes
 
-seqtk subseq  ../predicted_epitopes/plasmodium_epitopes.fasta antigenic_epitopes.tsv > antigenic_epitopes.fasta
+seqtk subseq  ../predicted_epitopes/combined_epitopes_cluster.fasta antigenic_epitopes.tsv > antigenic_epitopes.fasta
 
 #  Remove  allergenic epitopes predicted by allertop
 ## Check number of allergenic but antigenic epitopes (36)
