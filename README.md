@@ -3,7 +3,7 @@ This script provides information on how to analyze predicted b-cell linear epito
 
 
 
-## Bepipred extractor in RStudio 
+### Bepipred extractor in RStudio 
 Bepipred 2.0 is a tool used to predict the presence of b-cell linear epitopes. 
 
 Currently, Bepipred 2.0 is hosted at DTU University found here https://services.healthtech.dtu.dk/services/BepiPred-2.0/
