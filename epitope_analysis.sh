@@ -166,9 +166,11 @@ less epitopes_iedb.tsv | cut -f 3  > iedb_epitope_seq.tsv
 paste -d "\t" iedb_epitope_id.tsv iedb_epitope_seq.tsv | seqkit fx2tab > iedb_epitopes.fasta
 
 
-# Make
+# Make a database containing the epitopes 
+makeblastdb -dbtype prot -in ../blast_analysis/iedb_epitopes.fasta  -parse_seqids -out  iedb_epitopes
 
-
+# run blast against for the selected epitoped against existing epitopes from iedb 
+ seqtk subseq ../predicted_epitopes/combined_epitopes_cluster.fasta  final_predicted_epitopes.tsv > final_predicted_epitopes.fasta
 
 
 

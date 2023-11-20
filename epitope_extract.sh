@@ -1,6 +1,6 @@
 #! /bin/bash 
 
-VAR=$(cat final_cross_species_epitopes.tsv)
+VAR=$(cat  final_predicted_epitopes.tsv)
 
 
 
