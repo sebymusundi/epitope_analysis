@@ -166,11 +166,13 @@ less epitopes_iedb.tsv | cut -f 3  > iedb_epitope_seq.tsv
 paste -d "\t" iedb_epitope_id.tsv iedb_epitope_seq.tsv | seqkit fx2tab > iedb_epitopes.fasta
 
 
-# Make a database containing the epitopes 
+# Make a database containing the epitopes
 makeblastdb -dbtype prot -in ../blast_analysis/iedb_epitopes.fasta  -parse_seqids -out  iedb_epitopes
 
-# run blast against for the selected epitoped against existing epitopes from iedb 
- seqtk subseq ../predicted_epitopes/combined_epitopes_cluster.fasta  final_predicted_epitopes.tsv > final_predicted_epitopes.fasta
+# run blast against for the selected epitoped against existing epitopes from iedb
+seqtk subseq ../predicted_epitopes/combined_epitopes_cluster.fasta  final_predicted_epitopes.tsv > final_predicted_epitopes.fasta
+
+
 
 
 
@@ -282,8 +284,8 @@ mkdir -p  chromosome_1 chromosome_2 chromosome_3 chromosome_6 chromosome_7 chrom
 wget -P chromosome_1   ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_01_v3.final.vcf.gz
 wget -P chromosome_2    ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_02_v3.final.vcf.gz
 wget -P chromosome_3/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_03_v3.final.vcf.gz
-#wget -P chromosome_4/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_04_v3.final.vcf.gz
-#wget -P chromosome_5/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_05_v3.final.vcf.gz
+wget -P chromosome_4/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_04_v3.final.vcf.gz
+wget -P chromosome_5/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_05_v3.final.vcf.gz
 wget -P chromosome_6/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_06_v3.final.vcf.gz
 wget -P chromosome_7/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_07_v3.final.vcf.gz
 wget -P chromosome_8/  ftp://ngs.sanger.ac.uk:21/production/malaria/pfcommunityproject/Pf6/Pf_6_vcf/Pf_60_public_Pf3D7_08_v3.final.vcf.gz

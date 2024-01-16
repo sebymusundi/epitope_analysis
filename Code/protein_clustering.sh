@@ -62,3 +62,15 @@ do
 #done
 
 
+# Run the subcellular_location_pred.R script
+Rscript subcellular_location_pred.R "Data/WoLF_PSORT_animal_results.tabular" "Data/protein_pediction.csv" Results subcellular_plot.png extracellular_proteins.tsv
+
+
+# extract FASTA sequences for the predicted extracellular proteins using seqkt 
+
+seqtk subseq ../Results/PlasmoDB-66_Pfalciparum3D7 ../Results/extracellular_proteins.tsv > extracellular_proteins.fasta
+
+# surfaceome prediction using Phobious 
+Rscript surfaceome_analysis.R "Data/Phobius_output.tsv" Results "Results/Phobius_final.tsv"
+
+# 

@@ -24,7 +24,7 @@ library(ggvenn)
 # Read data 
 
 wolfpsort_results <- read_table(wolfpsort_file) 
-  
+
 
 
 # Rename the compartment region of WolfPsort 
@@ -53,27 +53,27 @@ wolfpsort_summary <- wolfpsort_results%>%
                                Compartment=="cyto_pero"~"Cystoskeleton/Peroxisome",
                                Compartment=="cysk"~ "Cytoskeleton")) %>%
   mutate(subcellular_location=case_when(Compartment== "Cytoplasm" ~"Intracellular",
-                                    Compartment == "Cytoplasm/nucleus" ~"Intracellular", 
-                                    Compartment== "Nucleus" ~ "Intracellular",
-                                    Compartment=="Endoplasmic reticulum" ~ "Membrane-bound", 
-                                    Compartment== "Extracellular" ~ "Extracellular",
-                                    Compartment=="Golgi apparatus" ~ "Membrane-bound",
-                                    Compartment=="lysosome" ~ "Membrane-bound",
-                                    Compartment== "Mitochondria" ~ "Membrane-bound", 
-                                    Compartment=="peroxisome" ~ "Membrane-bound",
-                                    Compartment=="Plasma membrane" ~ "Extracellular",
-                                    Compartment== "Vacuolar membrane"~"Membrane-bound",
-                                    Compartment==~"Cytoplasm/golgi"~ "Membrane-bound",
-                                    Compartment=="Cytoplasm/mitochondria"~ "Membrane-bound", 
-                                    Compartment== "Cytoplasm/Plasma membrane" ~ "Membrane-bound",
-                                    Compartment== "Endoplasmic reticulum/golgi apparatus" ~"Membrane-bound",
-                                    Compartment==  "Endoplasmic reticulum/mitocondria" ~"Membrane-bound",
-                                    Compartment=="Extracellular/Plasma membrane" ~ "Extracellular" ,
-                                    Compartment=="Mitochondria/Nucleus" ~ "Membrane-bound",
-                                    Compartment=="Mitochondria/peroxisome" ~ "Membrane-bound",
-                                    Compartment=="Cystoskeleton/Plasma membrane" ~ "Extracellular",
-                                    Compartment=="Cystoskeleton/Peroxisome" ~ "Membrane-bound",
-                                    Compartment== "Cytoskeleton" ~ "Membrane-bound")) %>%
+                                        Compartment == "Cytoplasm/nucleus" ~"Intracellular", 
+                                        Compartment== "Nucleus" ~ "Intracellular",
+                                        Compartment=="Endoplasmic reticulum" ~ "Membrane-bound", 
+                                        Compartment== "Extracellular" ~ "Extracellular",
+                                        Compartment=="Golgi apparatus" ~ "Membrane-bound",
+                                        Compartment=="lysosome" ~ "Membrane-bound",
+                                        Compartment== "Mitochondria" ~ "Membrane-bound", 
+                                        Compartment=="peroxisome" ~ "Membrane-bound",
+                                        Compartment=="Plasma membrane" ~ "Extracellular",
+                                        Compartment== "Vacuolar membrane"~"Membrane-bound",
+                                        Compartment==~"Cytoplasm/golgi"~ "Membrane-bound",
+                                        Compartment=="Cytoplasm/mitochondria"~ "Membrane-bound", 
+                                        Compartment== "Cytoplasm/Plasma membrane" ~ "Membrane-bound",
+                                        Compartment== "Endoplasmic reticulum/golgi apparatus" ~"Membrane-bound",
+                                        Compartment==  "Endoplasmic reticulum/mitocondria" ~"Membrane-bound",
+                                        Compartment=="Extracellular/Plasma membrane" ~ "Extracellular" ,
+                                        Compartment=="Mitochondria/Nucleus" ~ "Membrane-bound",
+                                        Compartment=="Mitochondria/peroxisome" ~ "Membrane-bound",
+                                        Compartment=="Cystoskeleton/Plasma membrane" ~ "Extracellular",
+                                        Compartment=="Cystoskeleton/Peroxisome" ~ "Membrane-bound",
+                                        Compartment== "Cytoskeleton" ~ "Membrane-bound")) %>%
   filter(Rank==1) %>%
   mutate(subcellular_location =as.factor(subcellular_location))
 
@@ -82,7 +82,7 @@ colnames(wolfpsort_summary)[1] <- "Protein_ID"
 # load data from Deeploc 
 
 deeploc_predictions <- read.delim(deeploc_file,  sep = ",") %>%
-
+  
   select(1:13) 
 
 deeploc_summary <-  deeploc_predictions%>%
@@ -142,7 +142,7 @@ deeploc_summary <-  deeploc_predictions%>%
 # Classify proteins based on subcellular location 
 deeploc_extra <-  deeploc_summary %>%
   filter(!Localizations %in% c("Cytoplasm", "Nucleus")) %>%
-   select(Protein_ID)
+  select(Protein_ID)
 
 deeploc_intracellular <-  deeploc_summary %>%
   filter(Localizations %in% c("Cytoplasm", "Nucleus")) %>%
@@ -175,8 +175,10 @@ dev.off()
 # select proteins for subsequent analysis 
 
 extracellular_proteins <- as.data.frame(union(wolfpsort_extra$Protein_ID, 
-                                deeploc_extra$Protein_ID))
+                                              deeploc_extra$Protein_ID))
 
 colnames(extracellular_proteins)[1] <- "Protein_ID"
 
 sessionInfo()
+
+

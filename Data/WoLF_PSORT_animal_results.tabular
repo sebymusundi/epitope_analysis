@@ -1,4 +1,4 @@
-#ID	Compartment	Score	Rank
+Protein_ID	Compartment	Score	Rank
 PF3D7_0100100.1-p1	cyto	18.5	1
 PF3D7_0100100.1-p1	cyto_nucl	15.1667	2
 PF3D7_0100100.1-p1	nucl	10.5	3
