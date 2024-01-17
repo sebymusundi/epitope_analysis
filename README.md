@@ -34,9 +34,12 @@ We retrieved mass spectrometry data on proteins located on the late schizont-mer
 
 #### B-cell linear epitope prediction
 
-We utilized Bepipred 2.0 and Epidope to predict epitopes. Bepipred 2.0 is a tool used to predict the presence of b-cell linear epitopes. We then made an R script
+We utilized Bepipred 2.0 and Epidope to predict epitopes. Bepipred 2.0 is a tool used to predict the presence of b-cell linear epitopes. We then made an R script **bepipred_extractor.R**. Currently, Bepipred 2.0 is hosted at DTU University found here https://services.healthtech.dtu.dk/services/BepiPred-2.0/. Bepipred accepts a maximum of 50 protein sequences and 300,000 amino acids per submission with the length ranging from 10-300000. The output for multiple protein sequences can be downloaded in the form of a CSV file. However, the output contains raw b-cell epitope sequences and takes time to process especially on epitopes that meet the defined threshold of 0.5. Herein I tried to extract the exposed epitopes that met the threshold score of 0.5. The final output file is in the form of a table containing the protein_ID, start and end position, epitope sequence, and length. The first trial is run with 50 protein sequences.
 
-Currently, Bepipred 2.0 is hosted at DTU University found here https://services.healthtech.dtu.dk/services/BepiPred-2.0/
+#### B-cell epitope analysis
 
-Bepipred accepts a maximum of 50 protein sequences and 300,000 amino acids per submission with the length ranging from 10-300000. The output for multiple protein sequences can be downloaded in the form of a CSV file. However, the output contains raw b-cell epitope sequences and takes time to process especially on epitopes that meet the defined threshold of 0.5. Herein I tried to extract the exposed epitopes that met the threshold score of 0.5. The final output file is in the form of a table containing
-the protein_ID, start and end position, epitope sequence, and length. The first trial is run with 50 protein sequences.
+We used BLAST to create a non-falciparum and human database and blasted the predicted B-cell linear epitopes against these database. We selected epitopes that had percentage similarity > 70, coverage>95% and length 10-30 amino acids. We further used Vaxijen 2.0 to check for antigenicity, AllerTop for allergenicity and ToxinPred for toxicity. We selected epitopes that were cross-species, non-human, non-allergen, non-toxic and antigenic.
+
+##### Conservation analysis
+
+We analyzed 27 locally sequenced isolated using the nextflow pipeline **plasmodium_variant.nf**. We obtained variant calling files and used the script **epitope_extraction.sh** to extract amino acid sequences containing the peptides of interest.
