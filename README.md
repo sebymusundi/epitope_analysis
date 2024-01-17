@@ -22,11 +22,11 @@ Plasmodium proteins from five species associated with human malaria were downloa
 
 #### Subcellular prediction
 
-WOLF PSORT(https://wolfpsort.hgc.jp/) and Deeploc (https://services.healthtech.dtu.dk/services/DeepLoc-2.0/) were used to predict the subcellular location of the proteins using _P. falciparum_ as the reference organism. Intracellular proteins were also eliminated using their protein names.
+WOLF PSORT(https://wolfpsort.hgc.jp/) and Deeploc (https://services.healthtech.dtu.dk/services/DeepLoc-2.0/) were used to predict the subcellular location of the proteins using _P. falciparum_ as the reference organism. Extracellular and membrane bound proteins were then selected based on the Rscript _subcellular_location_pred.R_ Intracellular proteins were also eliminated using their protein names (_epitope_analysis.sh_).
 
 #### Surfaceome prediction
 
-The presence of a signal peptide and transmembrane helice predicted by using Phobius (https://phobius.sbc.su.se/). Proteins with one signal peptide or one transmembrane helix were selected
+The presence of a signal peptide and transmembrane helice predicted by using Phobius (https://phobius.sbc.su.se/). Proteins with one signal peptide or one transmembrane helix were selected using the Rscript _surfaceome_analysis.R_
 
 #### Merozoite protein selection
 
