@@ -1,0 +1,317 @@
+>PF3D7_0103900.1-p1:499:525 Overall Protective Antigen Prediction = 0.6788 ( Probable ANTIGEN ).
+
+>PF3D7_0201700.1-p1:550:574 Overall Protective Antigen Prediction = 0.4080 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0205600.1-p1:521:547 Overall Protective Antigen Prediction = 0.1922 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0208500.1-p1:75:93 Overall Protective Antigen Prediction = 0.6451 ( Probable ANTIGEN ).
+
+>PF3D7_0208900.1-p1:2355:2382 Overall Protective Antigen Prediction = 0.1290 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0209000.1-p1:1135:1158 Overall Protective Antigen Prediction = 0.7371 ( Probable ANTIGEN ).
+
+>PF3D7_0209000.1-p1:1909:1935 Overall Protective Antigen Prediction = 0.4211 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0313800.1-p1:557:578 Overall Protective Antigen Prediction = 0.4499 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0630400.1-p1:126:155 Overall Protective Antigen Prediction = 0.3436 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0703500.1-p1:1603:1624 Overall Protective Antigen Prediction = 0.9389 ( Probable ANTIGEN ).
+
+>PF3D7_0703500.1-p1:1768:1795 Overall Protective Antigen Prediction = 0.3794 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0703500.1-p1:2025:2048 Overall Protective Antigen Prediction = 1.1973 ( Probable ANTIGEN ).
+
+>PF3D7_0720400.1-p1:167:192 Overall Protective Antigen Prediction = 0.3077 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0720400.1-p1:619:638 Overall Protective Antigen Prediction = 0.0741 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0729200.1-p1:209:227 Overall Protective Antigen Prediction = 0.5648 ( Probable ANTIGEN ).
+
+>PF3D7_0807300.1-p1:96:114 Overall Protective Antigen Prediction = -0.1785 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0807300.1-p1:175:197 Overall Protective Antigen Prediction = 0.6769 ( Probable ANTIGEN ).
+
+>PF3D7_0816300.1-p1:169:192 Overall Protective Antigen Prediction = 0.3066 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0816600.1-p1:218:234 Overall Protective Antigen Prediction = -0.0366 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0816600.1-p1:296:313 Overall Protective Antigen Prediction = 0.9052 ( Probable ANTIGEN ).
+
+>PF3D7_0816600.1-p1:481:499 Overall Protective Antigen Prediction = 0.3472 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0816600.1-p1:532:548 Overall Protective Antigen Prediction = 0.1068 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0816600.1-p1:656:679 Overall Protective Antigen Prediction = 0.1363 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0816600.1-p1:721:746 Overall Protective Antigen Prediction = 0.5205 ( Probable ANTIGEN ).
+
+>PF3D7_0904700.1-p1:110:129 Overall Protective Antigen Prediction = 0.5089 ( Probable ANTIGEN ).
+
+>PF3D7_0910100.1-p1:228:245 Overall Protective Antigen Prediction = 1.2264 ( Probable ANTIGEN ).
+
+>PF3D7_0910800.1-p1:164:184 Overall Protective Antigen Prediction = 0.6326 ( Probable ANTIGEN ).
+
+>PF3D7_0910800.1-p1:195:212 Overall Protective Antigen Prediction = 0.4771 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0913700.1-p1:516:542 Overall Protective Antigen Prediction = 0.8116 ( Probable ANTIGEN ).
+
+>PF3D7_0917900.1-p1:97:124 Overall Protective Antigen Prediction = 0.0871 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0917900.1-p1:369:387 Overall Protective Antigen Prediction = 0.6077 ( Probable ANTIGEN ).
+
+>PF3D7_1014700.1-p1:135:154 Overall Protective Antigen Prediction = 0.1656 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1104100.1-p1:250:272 Overall Protective Antigen Prediction = 0.3960 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1104100.1-p1:281:302 Overall Protective Antigen Prediction = 0.2564 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1104400.1-p1:393:421 Overall Protective Antigen Prediction = 0.4068 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1106200.1-p1:629:646 Overall Protective Antigen Prediction = 0.8343 ( Probable ANTIGEN ).
+
+>PF3D7_1108700.1-p1:34:54 Overall Protective Antigen Prediction = 0.4747 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1108700.1-p1:56:79 Overall Protective Antigen Prediction = 0.1704 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1108700.1-p1:360:380 Overall Protective Antigen Prediction = 0.1474 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1116800.1-p1:355:374 Overall Protective Antigen Prediction = 0.3033 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1116800.1-p1:575:593 Overall Protective Antigen Prediction = 0.4046 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1116800.1-p1:670:694 Overall Protective Antigen Prediction = 0.5162 ( Probable ANTIGEN ).
+
+>PF3D7_1116800.1-p1:758:780 Overall Protective Antigen Prediction = 0.3415 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1116800.1-p1:791:814 Overall Protective Antigen Prediction = -0.3692 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1123300.1-p1:254:271 Overall Protective Antigen Prediction = -0.2569 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1123300.1-p1:573:602 Overall Protective Antigen Prediction = 0.9577 ( Probable ANTIGEN ).
+
+>PF3D7_1136800.1-p1:258:276 Overall Protective Antigen Prediction = -0.5940 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1143800.1-p1:311:335 Overall Protective Antigen Prediction = 0.5747 ( Probable ANTIGEN ).
+
+>PF3D7_1147800.1-p1:312:328 Overall Protective Antigen Prediction = 1.0277 ( Probable ANTIGEN ).
+
+>PF3D7_1216700.1-p1:809:824 Overall Protective Antigen Prediction = 0.4862 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1222300.1-p1:170:187 Overall Protective Antigen Prediction = -0.0326 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1222300.1-p1:670:698 Overall Protective Antigen Prediction = 0.3770 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1227800.1-p1:347:374 Overall Protective Antigen Prediction = 0.3026 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1227800.1-p1:399:416 Overall Protective Antigen Prediction = 0.5113 ( Probable ANTIGEN ).
+
+>PF3D7_1227800.1-p1:566:583 Overall Protective Antigen Prediction = 0.4262 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1227800.1-p1:636:660 Overall Protective Antigen Prediction = 0.9370 ( Probable ANTIGEN ).
+
+>PF3D7_1232100.1-p1:365:393 Overall Protective Antigen Prediction = 0.2708 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1236400.1-p1:23:47 Overall Protective Antigen Prediction = 0.3751 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1246800.1-p1:182:202 Overall Protective Antigen Prediction = 0.7761 ( Probable ANTIGEN ).
+
+>PF3D7_1323600.1-p1:116:144 Overall Protective Antigen Prediction = 0.4649 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1323600.1-p1:289:312 Overall Protective Antigen Prediction = 0.6677 ( Probable ANTIGEN ).
+
+>PF3D7_1367600.1-p1:118:136 Overall Protective Antigen Prediction = 1.2563 ( Probable ANTIGEN ).
+
+>PF3D7_1367600.1-p1:143:165 Overall Protective Antigen Prediction = 0.3427 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1369600.1-p1:207:226 Overall Protective Antigen Prediction = -0.9028 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1404900.1-p1:152:176 Overall Protective Antigen Prediction = 0.4111 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1404900.1-p1:259:282 Overall Protective Antigen Prediction = 0.3319 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1407200.1-p1:62:86 Overall Protective Antigen Prediction = 0.4059 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1412900.1-p1:35:52 Overall Protective Antigen Prediction = 1.1197 ( Probable ANTIGEN ).
+
+>PF3D7_1413500.1-p1:228:250 Overall Protective Antigen Prediction = 0.5189 ( Probable ANTIGEN ).
+
+>PF3D7_1439800.1-p1:93:110 Overall Protective Antigen Prediction = 0.4137 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1455800.1-p1:175:200 Overall Protective Antigen Prediction = 0.6045 ( Probable ANTIGEN ).
+
+>PF3D7_1455800.1-p1:212:230 Overall Protective Antigen Prediction = -0.2813 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1455800.1-p1:270:297 Overall Protective Antigen Prediction = 0.9890 ( Probable ANTIGEN ).
+
+>PF3D7_1458100.1-p1:25:54 Overall Protective Antigen Prediction = 0.8837 ( Probable ANTIGEN ).
+
+>PF3D7_0204200.1-p1:108:135 Overall Protective Antigen Prediction = 0.8113 ( Probable ANTIGEN ).
+
+>PF3D7_0323400.1-p1:929:953 Overall Protective Antigen Prediction = 0.1898 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0419700.1-p1:214:236 Overall Protective Antigen Prediction = 0.0973 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0508000.1-p1:151:180 Overall Protective Antigen Prediction = 0.3058 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0508500.1-p1:782:804 Overall Protective Antigen Prediction = 0.5786 ( Probable ANTIGEN ).
+
+>PF3D7_0508500.1-p1:917:938 Overall Protective Antigen Prediction = -0.0323 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0525300.1-p1:21:44 Overall Protective Antigen Prediction = 0.4484 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0603800.1-p1:139:157 Overall Protective Antigen Prediction = 0.4701 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0603800.1-p1:336:356 Overall Protective Antigen Prediction = 0.5995 ( Probable ANTIGEN ).
+
+>PF3D7_0603800.1-p1:409:430 Overall Protective Antigen Prediction = 0.4429 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0603800.1-p1:529:551 Overall Protective Antigen Prediction = 0.0998 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0603800.1-p1:973:995 Overall Protective Antigen Prediction = 0.6535 ( Probable ANTIGEN ).
+
+>PF3D7_0806300.1-p1:144:173 Overall Protective Antigen Prediction = 0.8708 ( Probable ANTIGEN ).
+
+>PF3D7_0806300.1-p1:612:636 Overall Protective Antigen Prediction = 0.6644 ( Probable ANTIGEN ).
+
+>PF3D7_0806300.1-p1:759:780 Overall Protective Antigen Prediction = 0.4142 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0806300.1-p1:793:814 Overall Protective Antigen Prediction = 0.7910 ( Probable ANTIGEN ).
+
+>PF3D7_0806300.1-p1:843:869 Overall Protective Antigen Prediction = -0.1011 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0806300.1-p1:1303:1327 Overall Protective Antigen Prediction = 0.6012 ( Probable ANTIGEN ).
+
+>PF3D7_0806300.1-p1:1361:1390 Overall Protective Antigen Prediction = 0.7685 ( Probable ANTIGEN ).
+
+>PF3D7_0806300.1-p1:1469:1490 Overall Protective Antigen Prediction = 0.3825 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0806300.1-p1:1587:1616 Overall Protective Antigen Prediction = 0.2069 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0905400.1-p1:82:104 Overall Protective Antigen Prediction = 0.4649 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0930300.1-p1:1143:1172 Overall Protective Antigen Prediction = 0.2325 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1024800.1-p1:991:1011 Overall Protective Antigen Prediction = 0.4057 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1105300.1-p1:706:726 Overall Protective Antigen Prediction = 0.8228 ( Probable ANTIGEN ).
+
+>PF3D7_1105800.1-p1:145:163 Overall Protective Antigen Prediction = 0.6744 ( Probable ANTIGEN ).
+
+>PF3D7_1116000.1-p1:839:862 Overall Protective Antigen Prediction = 0.3436 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1147900.1-p1:6:23 Overall Protective Antigen Prediction = 0.7110 ( Probable ANTIGEN ).
+
+>PF3D7_1147900.1-p1:148:169 Overall Protective Antigen Prediction = 0.6801 ( Probable ANTIGEN ).
+
+>PF3D7_1210100.1-p1:79:105 Overall Protective Antigen Prediction = 0.5026 ( Probable ANTIGEN ).
+
+>PF3D7_1237900.1-p1:238:260 Overall Protective Antigen Prediction = 0.5040 ( Probable ANTIGEN ).
+
+>PF3D7_1304400.1-p1:303:327 Overall Protective Antigen Prediction = 0.4009 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1304400.1-p1:484:511 Overall Protective Antigen Prediction = 0.3962 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1321900.1-p1:246:262 Overall Protective Antigen Prediction = 1.2733 ( Probable ANTIGEN ).
+
+>PF3D7_1427000.1-p1:562:584 Overall Protective Antigen Prediction = 0.6059 ( Probable ANTIGEN ).
+
+>PF3D7_1451800.1-p1:59:76 Overall Protective Antigen Prediction = 0.1355 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1451800.1-p1:373:399 Overall Protective Antigen Prediction = 0.0130 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1451800.1-p1:540:556 Overall Protective Antigen Prediction = -0.6254 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1451800.1-p1:629:649 Overall Protective Antigen Prediction = 0.9873 ( Probable ANTIGEN ).
+
+>PF3D7_0204100.1-p1_1137_1162 Overall Protective Antigen Prediction = 0.3114 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0204100.1-p1_1559_1588 Overall Protective Antigen Prediction = 0.9387 ( Probable ANTIGEN ).
+
+>PF3D7_0205600.1-p1_228_248 Overall Protective Antigen Prediction = 0.5678 ( Probable ANTIGEN ).
+
+>PF3D7_0205600.1-p1_439_467 Overall Protective Antigen Prediction = 0.4198 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0205600.1-p1_499_517 Overall Protective Antigen Prediction = -0.2125 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0317100.1-p1_685_712 Overall Protective Antigen Prediction = 0.4011 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0318300.1-p1_950_978 Overall Protective Antigen Prediction = 0.3745 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0318300.1-p1_996_1015 Overall Protective Antigen Prediction = 1.0390 ( Probable ANTIGEN ).
+
+>PF3D7_0603800.1-p1_1213_1235 Overall Protective Antigen Prediction = 0.8272 ( Probable ANTIGEN ).
+
+>PF3D7_0603800.1-p1_1713_1738 Overall Protective Antigen Prediction = 0.2515 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0703200.1-p1_1312_1330 Overall Protective Antigen Prediction = 0.4946 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0709200.1-p1_230_245 Overall Protective Antigen Prediction = 0.1556 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0721700.1-p1_138_163 Overall Protective Antigen Prediction = 1.0324 ( Probable ANTIGEN ).
+
+>PF3D7_0721700.1-p1_179_198 Overall Protective Antigen Prediction = 0.2873 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0806300.1-p1_10_39 Overall Protective Antigen Prediction = 0.7383 ( Probable ANTIGEN ).
+
+>PF3D7_0806300.1-p1_591_616 Overall Protective Antigen Prediction = 1.0479 ( Probable ANTIGEN ).
+
+>PF3D7_0809200.1-p1_105_126 Overall Protective Antigen Prediction = 0.5990 ( Probable ANTIGEN ).
+
+>PF3D7_0809200.1-p1_1289_1316 Overall Protective Antigen Prediction = 0.2476 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0828800.1-p1_263_285 Overall Protective Antigen Prediction = 0.5898 ( Probable ANTIGEN ).
+
+>PF3D7_0910100.1-p1_245_269 Overall Protective Antigen Prediction = -0.4005 ( Probable NON-ANTIGEN ).
+
+>PF3D7_0913700.1-p1_520_545 Overall Protective Antigen Prediction = 0.5412 ( Probable ANTIGEN ).
+
+>PF3D7_0929400.1-p1_823_849 Overall Protective Antigen Prediction = 0.4491 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1024500.1-p1_165_186 Overall Protective Antigen Prediction = 0.8719 ( Probable ANTIGEN ).
+
+>PF3D7_1024800.1-p1_997_1017 Overall Protective Antigen Prediction = 0.2303 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1105300.1-p1_694_720 Overall Protective Antigen Prediction = 0.7695 ( Probable ANTIGEN ).
+
+>PF3D7_1105600.1-p1_71_94 Overall Protective Antigen Prediction = 0.6698 ( Probable ANTIGEN ).
+
+>PF3D7_1116400.1-p1_93_112 Overall Protective Antigen Prediction = 0.4387 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1136800.1-p1_282_312 Overall Protective Antigen Prediction = 0.6716 ( Probable ANTIGEN ).
+
+>PF3D7_1218000.1-p1_328_352 Overall Protective Antigen Prediction = -0.0489 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1226900.1-p1_180_194 Overall Protective Antigen Prediction = 0.7200 ( Probable ANTIGEN ).
+
+>PF3D7_1227800.1-p1_297_317 Overall Protective Antigen Prediction = -0.1608 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1232100.1-p1_255_276 Overall Protective Antigen Prediction = -0.0206 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1313600.1-p1_458_477 Overall Protective Antigen Prediction = 0.2605 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1313600.1-p1_732_751 Overall Protective Antigen Prediction = 1.1036 ( Probable ANTIGEN ).
+
+>PF3D7_1333000.1-p1_49_68 Overall Protective Antigen Prediction = 0.7563 ( Probable ANTIGEN ).
+
+>PF3D7_1333000.1-p1_207_230 Overall Protective Antigen Prediction = 1.2345 ( Probable ANTIGEN ).
+
+>PF3D7_1338600.1-p1_578_604 Overall Protective Antigen Prediction = 0.4011 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1350500.1-p1_373_391 Overall Protective Antigen Prediction = -0.2737 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1350500.1-p1_1042_1066 Overall Protective Antigen Prediction = 0.7438 ( Probable ANTIGEN ).
+
+>PF3D7_1351200.1-p1_1147_1176 Overall Protective Antigen Prediction = 0.3887 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1369600.1-p1_841_867 Overall Protective Antigen Prediction = 0.6986 ( Probable ANTIGEN ).
+
+>PF3D7_1406100.1-p1_1015_1043 Overall Protective Antigen Prediction = 0.8438 ( Probable ANTIGEN ).
+
+>PF3D7_1418100.1-p1_2217_2244 Overall Protective Antigen Prediction = 0.0547 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1451800.1-p1_64_86 Overall Protective Antigen Prediction = 1.1355 ( Probable ANTIGEN ).
+
+>PF3D7_1451800.1-p1_356_383 Overall Protective Antigen Prediction = -0.1088 ( Probable NON-ANTIGEN ).
+
+>PF3D7_1451800.1-p1_793_811 Overall Protective Antigen Prediction = 0.0204 ( Probable NON-ANTIGEN ).
